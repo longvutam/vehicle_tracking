@@ -1,0 +1,160 @@
+body{
+    font-family: Helvetica, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+}
+
+#main-head{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#img-background{
+    width: 100%;
+    height: auto;
+}
+
+#main-head  h2{
+    width: 100%;
+    margin-top: 10%;
+    position: absolute;
+    font-size: 8vw;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+#clock{
+    width: 100%;
+    position: absolute;
+    font-size: 9vw;
+    text-align: center;
+    margin-top: 20%;
+    color: white;
+}
+
+.area{
+    width: 80%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 5px;
+    border-left: solid 2px #a7c0f0;
+}
+.area > span:first-child{
+    width: 95%;
+}
+.area:hover{
+    cursor: pointer;
+    background-color: rgb(209, 223, 235);
+    border-left: solid 2px #e25050;
+}
+
+.icon-area{
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.vehicle{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 10px;
+    color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all ease 0.3s;
+}
+
+.bg-pink{
+    background-color: rgb(53, 233, 92);
+}
+
+.bg-red{
+    background-color: rgb(221, 120, 120);
+}
+
+.bg-yellow{
+    background-color: rgba(222, 233, 70, 0.801);
+}
+
+.bg-blue{
+    background-color: rgba(113, 111, 228, 0.884);
+}
+.area > span{
+    width: 50%;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+}
+
+#icon-red:hover{
+    color: red;
+}
+#icon-yellow:hover{
+    color: yellow;
+}
+#icon-green:hover{
+    color: green;
+}
+
+.video{
+    width: 100%;
+}
+
+.estimate-line-out{
+    display: flex;
+    background-color: #e9ecef;
+    height: 8px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 80%;
+    z-index: 0;
+}
+.estimate-line-in{
+    background-color: #2f55d4;
+    position: relative;
+    top: 0;
+    border-radius: 10px;
+    height: 8px;
+    z-index: 2;
+}
+.button-fill{
+    font-weight: 500 !important;
+}
+.button-blue{
+    background-color: #2f55d4 !important;
+}
+
+#sum{
+    margin-left: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .vehicle:hover{
+        transform: translate(0,-10px);
+    }
+    .video{
+        height: 500px;
+    }
+    .mobile{
+        display: none;
+    }
+}
+@media only screen and (max-width: 760px) {
+    .video{
+        height: 200px;
+    }
+    .vehicle{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+}
